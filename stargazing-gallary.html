@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery2</title>
+    <link rel="stylesheet" href="gallary2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="page-title">
+        <p>Stargazing</p>
+    </div>
+    <div class="gallary2">
+        
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="star1.jpg">
+                    <div class="text-box text-box1">
+                        <p>Astrophotography.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="star4.jpg">
+                    <div class="text-box text-box2">
+                        <p>Astrophotography.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="star3.jpg">
+                    <div class="text-box text-box3">
+                        <p>Astrophotography.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="stargazing1.jpg">
+                    <div class="text-box text-box4">
+                        <p>An introducation to Astronomy session for B.Tech first year students.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="stargazing2.jpg">
+                    <div class="text-box text-box5">
+                        <p>An introducation to Astronomy session for B.Tech first year students.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="btech1.jpg">
+                    <div class="text-box text-box6">
+                        <p>An introducation to Astronomy session for B.Tech first year students.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="btech2.jpg">
+                    <div class="text-box text-box7">
+                        <p>An introducation to Astronomy session for B.Tech first year students.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="stargazing.jpg">
+                    <div class="text-box text-box8">
+                        <p>Stargazing sessions for general public during IISF-2022, held at MANIT Bhopal.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="stargazing3.JPG">
+                    <div class="text-box text-box9">
+                        <p>Stargazing sessions for general public during IISF-2022, held at MANIT Bhopal.</p>
+                    </div>
+                </div>
+                
+        
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }, 
+        });
+    </script>
+</body>
+</html>
