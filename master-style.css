@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.master {
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    background-color: rgb(211, 250, 248);
+    margin-bottom: 20px;
+}
+
+.master h2{
+    font-size: 30px;
+    padding: 20px;
+    
+}
+
+.master h3 {
+    font-size: 5vmin;
+    color: blueviolet;
+}
+
+.abstract{
+    width: 90%;
+    padding: 10px auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+.abstract-title{
+    font-size: 4vmin;
+    /* background-color: azure; */
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 30px;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.abstract-text{
+    justify-content: center;
+    text-align: justify;
+    font-size: 2.0vmax;
+    padding: 20px;
+    
+}
+
+.abstract-text img{
+    width: 100%;
+    padding: 20px;
+}
+
+video {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    
+  }
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+    margin: -20px auto;
+}
+
+
+.DS {
+    background-color: black;
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: -60px;
+    min-width: 100px;
+    
+    
+}
+
+
+/* .DS img{
+    margin: -60px;
+    width: 60%;
+    height: auto;
+} */
+
+.DS .sign-ani{
+    width: 120vh;
+    
+}
+
+.DS .covering {
+    
+    width: 62vh;
+    margin-left: -60px;
+    margin-top: 6vh;
+}
+
+
+.msc-pdf{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+    box-shadow: 2px 3px 6px rgba(229, 151, 151, 0.49);
+    
+}
+
+.pdf-button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #336699;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .pdf-button:hover {
+    background-color: #f0f359;
+    color: #336699;
+  }
+  
+
+
+
+.social-links{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10px auto;
+        
+}
+
+.social-links a{
+    position: relative;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin: 0vmin auto;
+    justify-content: center; 
+}
+
+.social-links a img{
+    width: 8vmin;
+    margin: 30px 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+}
+
+.social-links a img:hover{
+    width: 9vmin;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(-15px);
+}
+
+
+@media screen and (max-width: 768px) {
+    figcaption {
+        font-size: 10px;
+        text-align: center;
+        width: 80%;
+        margin: -20px auto;
+    }
+
+    .abstract-text{
+        font-size: 2.7vmax;
+    }
+
+    .DS {
+       
+        margin-top: 10px;
+        margin-left: -0px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        min-width: 100px;
+        
+        
+    }
+
+    .DS .sign-ani{
+        width: 130vh;
+       
+        
+    }
+    
+    .DS .covering {
+        
+        width: 55vh;
+        margin-left: -50px;
+        margin-top: 5.5vh;
+    }
+    
+    .msc-pdf{  
+        font-size: 16px;
+
+    } 
+    .pdf-button {
+        font-size: 10px;
+    }
+    
+   
+  }
