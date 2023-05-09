@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background: black;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+
+}
+
+.hero .carousel {
+    
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+}
+
+.carousel img{
+  -webkit-box-reflect: below 20px linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  
+}
+
+.title-name {
+    color: whitesmoke;
+    margin: 50px auto;
+    margin-bottom: -70px;
+    justify-content: center;
+    display: flex;
+    left: 50%;
+    font-size: 4vmin;
+}
+
+.text-box{
+    width: 600px;
+    position: absolute;
+    top: 130px;
+    left: 5px;
+    color: #fff;
+    animation: textup 12s linear infinite;
+    transform:  translateY(100px);
+}
+
+.text-box p{
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: 50px;
+    justify-content: center;
+    
+}
+
+.text-box0{
+    margin-top: -15px;
+    margin-left: 90px;
+}
+
+.text-box1{
+    margin-top: -15px;
+    margin-left: 90px;
+}
+
+.text-box2 {
+    margin-top: -15px;
+    margin-left: 70px;
+}
+
+.text-box3 {
+    margin-top: -55px;
+    margin-left: 90px;
+}
+.text-box4 {
+    margin-top: -15px;
+    margin-left: 90px;
+}
+.text-box5 {
+    margin-top: -15px;
+    margin-left: 30px;
+}
+
+.text-box6 {
+    margin-top: -55px;
+    margin-left: 90px;
+}
+.text-box7 {
+    margin-top: -15px;
+    margin-left: 90px;
+}
+.text-box8 {
+    margin-top: -15px;
+    margin-left: 90px;
+}

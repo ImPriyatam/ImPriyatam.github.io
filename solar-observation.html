@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titleImage Gallery</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="gallary.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="title-name">
+            <h1>Solar Observations</h1>
+        </div>
+        <div class="carousel">
+            <ul><li>
+                <img src="solar3.jpg">
+                <div class="text-box text-box0">
+                    <p>Partial Solar Eclipse observed on 25 October 2022.</p>
+                </div>
+                </li>
+
+                <li>
+                    <img src="eclipse1.jpeg">
+                    <div class="text-box text-box1">
+                        <p>Taken image of partial solar eclipse.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="eclipse3.jpg">
+                    <div class="text-box text-box2">
+                    <p>Indirect imaging techniques to see Solar eclipse, Solar Projection Box.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <img src="solarbox.jpeg">
+                    <div class="text-box text-box3">
+                        <p>Image of partial solar eclipse on the projection box.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="eclipse4.jpg">
+                    <div class="text-box text-box4">
+                    <p>Attendees discussed various questions with Volunteers.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="solar1.JPG">
+                    <div class="text-box text-box5">
+                        <p>Organised sun-spots Observations sessions for public at IISF, held at MANIT Bhopal.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="sun-spots2.jpg">
+                    <div class="text-box text-box6">
+                        <p>Images of the Sun with sun-spots (Dark patches)</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="solar2.JPG">
+                    <div class="text-box text-box7">
+                        <p>Waiting to move clouds from line of sight to the Sun.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="solar5.JPG">
+                    <div class="text-box text-box8">
+                        <p>School children watching the sun and sun-spots.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+     <script>
+    $('.carousel').flipster({
+        style:'carousel',
+        spacing: -0.25,
+    });
+    </script>
+</body>
+</html>
