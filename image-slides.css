@@ -1,0 +1,144 @@
+
+
+.image-slides{
+    width: 80%;
+    margin: -20px auto;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+/* .slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: -20px auto;
+    margin-top: -40px;
+    
+  } */
+  
+  /* .mySlides {
+    display: none;
+    text-align: center;
+  } */
+  
+  /* Responsive slideshow */
+  .slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: -40px;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .mySlides img {
+    vertical-align: middle;
+    margin-bottom: 20px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(207, 214, 76, 0.6);
+  }
+  
+  .text {
+    color: #000000;
+    font-size: 15px;
+    padding: 18px 12px;
+    position: absolute;
+    margin: -20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } */
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+.active {
+    background-color: #f22121;
+  }
+
+.dot:hover {
+    background-color: #1bef34;
+}
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 600px) {
+    .slideshow-container {
+      max-width: 100%;
+      margin-top: -10px;
+    }
+    .text{
+        font-size: 10px;
+    }
+
+    .prev, .next {
+        top: 40%;
+        font-size: 14px;
+      }
+  }
+  
