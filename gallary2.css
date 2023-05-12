@@ -117,10 +117,28 @@ body{
     top: 100px;
 }
 
+
 @media screen and (max-width: 768px) {
     .swiper {
         margin-top: -150px;
       
+    }
+    .swiper {
+        width: 98%;
+    }
+    .text-box{
+        width: 190px;
+        position: absolute;
+        top: -140px;
+        left: 45px;
+        
+    }
+    .text-box p{
+        font-size: 9px;
+    }
+
+    .text-box9{
+        top: -152px;
     }
   }
 
