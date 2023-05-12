@@ -127,7 +127,11 @@
 
   
   /* Media queries for responsiveness */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
+     .image-slides{
+      width: 100%;
+    }
+      
     .slideshow-container {
       max-width: 100%;
       margin-top: -10px;
