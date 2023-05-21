@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImPriyatam</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="navbar-style.css">
+    <title>Responsive Navbar</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <h1 class="logo">I'mPriyatam</h1>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#sectionEdu">Education</a></li>
-            <li><a href="#sectionSki">Skills</a></li>
-            <li><a href="#sectionPro">Project</a></li>
-            <li><a href="#sectionEve">Outreach Events</a></li>
-            <li><a href="#sectionCon">Contact Me</a></li>
-        </ul>
-        <img src="menu.png" alt="Menu" class="menu-btn">
-    </nav>
     <header>
+        <div class="navbar-background">
+            <div class="navbar">
+                <div class="logo"><p>ImPriyatam</p></div>
+                <ul class="nav-links">
+                    <li style="width: 70px;"><a href="index.html">Home</a></li>
+                    <li style="width: 70px;"><a href="#sectionEdu">Education</a></li>
+                    <li style="width: 70px;"><a href="#sectionSki">Skills</a></li>
+                    <li style="width: 70px;"><a href="#sectionPro">Project</a></li>
+                    <li style="width: 160px; margin-left: -10px;"><a href="#sectionEve">Outreach Events</a></li>
+                    <li style="width: 120px; margin-left: -20px;"><a href="#sectionCon">Contact Me</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+    
+                <div class="dropdown_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#sectionEdu">Education</a></li>
+                    <li><a href="#sectionSki">Skills</a></li>
+                    <li><a href="#sectionPro">Project</a></li>
+                    <li><a href="#sectionEve">Outreach Events</a></li>
+                    <li><a href="#sectionCon">Contact Me</a></li>
+                </div>
+    
+            </div>
+        </div>
         <div class="hero-text">
             <h1>Hello, <br> I'm Priyatam Kumar Mahto</h1>
             <p>I'm a final year M.Sc in Astronomy student at the Indian Institute of Technology Indore (IIT Indore).</p>
         </div>
+        
     </header>
-
- <!-- Education Section -->
+    <main>
+        <!-- Education Section -->
     <section class="education-section" id="sectionEdu">
         <h2>Education</h2>
         <div class="education-container">
@@ -76,8 +89,6 @@
         </div>
         </div>
     </section>
-  
-      
       <!-- Skill section -->
       
       
@@ -116,8 +127,8 @@
           </div>
         </div>
       </section>
-      
-      <!--Project Sections  -->
+
+            <!--Project Sections  -->
 
     <section class="projects-section" id="sectionPro">
         <h2>Projects</h2>
@@ -142,8 +153,7 @@
             </div>
         </div>
     </section>
-
-
+    
     <!-- Event Sections -->
 
     <section class="events-section" id="sectionEve">
@@ -211,15 +221,25 @@
             <p>&copy; 2023 I'm Priyatam. All rights reserved.</p>
         </div>
     </footer>
+  
+        
 
+    </main>
 
     <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
-        menuBtn.addEventListener('click', ()=>{
-            navlinks.classList.toggle('mobile-menu')
-        })
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
     </script>
+    
 </body>
 </html>
