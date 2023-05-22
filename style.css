@@ -33,7 +33,6 @@ header{
     background-position: center;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
 }
 
 .navbar-background {
@@ -56,7 +55,7 @@ header{
 }
 
 .navbar .logo p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     border: 1px #ceff1f solid;
     padding: 4px 8px;
@@ -64,6 +63,7 @@ header{
     backdrop-filter: blur(15px);
     border-radius: 40px;
     box-shadow: 0px 0px 10px 6px #fffb00, 0px 0px 10px 10px #0b23ff;
+    
 }
 
 .navbar .nav-links {
@@ -73,8 +73,6 @@ header{
     justify-content: center;
     text-align: center;
     padding: 20px 0;
-    
-
 }
 
 .navbar .nav-links li {
@@ -123,7 +121,6 @@ header{
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 222;
 }
 
 .dropdown_menu.open{
@@ -141,10 +138,11 @@ header{
     z-index: 6;
 }
 
-.navbar .dropdown_menu li a{
+.dropdown_menu li a{
     text-decoration: none;
     color: whitesmoke;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .dropdown_menu li a:hover{
@@ -162,27 +160,19 @@ header{
 
 /* Introduction section */
 
-.hero-text {
-    /* font-size: unset; */
+
+  .hero-text {
     height: calc(100vh-60px);
-    position: relative;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    
-    z-index: 2;
-   
-    /* top: 90%; */
-    /* left: 50%; */
-    transform: translate(0%, 40%);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
     text-align: center;
-    justify-content: center;
   }
   
   .hero-text h1 {
-    font-size: 9vmin;
-    margin-top: 0px;
+    font-size: 10vmin;
+    margin-top: 90px;
     color: #fff;
     text-shadow: 2px 2px 4px #000;
     margin-bottom: 20px;
@@ -209,25 +199,14 @@ header{
   
   .dropdown_menu{
       display: block;
+
       
   }
   .navbar .logo p{
-      font-size: 1.2rem;
+      font-size: 1.0rem;
+      margin-left: -15px;
   }
 
-  .hero-text {
-    transform: translate(0%, 45vh);
-  }
-
-  .hero-text h1{
-    margin: 0 -60px;
-    font-size: 6vmin;
-    margin-bottom: 20px;
-  }
-
-  .hero-text p{
-    font-size: 1.4rem
-  }
 }
 
 @media (max-width:576px) {
@@ -236,8 +215,10 @@ header{
       width: unset;
   }
   .navbar .logo p{
-      font-size: 1.2rem;
+      font-size: 1.0rem;
+      margin-left: -15px;
   }
+
 
 }
 
